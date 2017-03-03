@@ -22,5 +22,10 @@ namespace Portfolio.Net.Controllers
             var allStarredRepos = Repo.GetStarredRepos();
             return View(allStarredRepos);
         }
+
+        public IActionResult About()
+        {
+            return View();
+        }
     }
 }
