@@ -19,7 +19,7 @@ namespace Portfolio.Net.Controllers
 
         public IActionResult Projects()
         {
-            var allStarredRepos = Repo.GetStarredRepos();
+            var allStarredRepos = Starred.GetStarredRepos();
             return View(allStarredRepos);
         }
 

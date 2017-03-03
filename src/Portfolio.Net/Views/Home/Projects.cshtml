@@ -4,3 +4,24 @@
 }
 
 <h2>This is the Projects Page</h2>
+
+@model IEnumerable<Portfolio.Net.Models.Starred>
+
+<h2>Starred Repos</h2>
+<hr />
+<ol>
+
+
+    @foreach (var repo in Model.Take(3))
+    {
+        <li>
+            <ul>
+                <li>Name: @Html.DisplayFor(modelItem =>repo.Name)</li>
+                <li>Url: @Html.DisplayFor(modelItem => repo.Html_url)</li>
+                <li>Starred Count: @Html.DisplayFor(modelItem => repo.Stargazers_count)</li>
+            </ul>
+        </li>
+    }
+</ol>
+
+@Html.ActionLink("Back home", "Index")
