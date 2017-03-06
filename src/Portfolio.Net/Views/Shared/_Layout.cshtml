@@ -3,10 +3,44 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container head-custom">
+            <img src="~/img/me.png" class="logo" alt="Picture of Brittany Rausch and her dog Waffles" />
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"></a>
+            </div>
+            <div class="header-text">
+                <h4><span class="header-Name">Brittany Rausch      </span>  
+
+               <span class="header-links"> @Html.ActionLink("Home", "Index")  |  @Html.ActionLink("About", "About")  |  @Html.ActionLink("Projects", "Projects") </span></h4>
+
+
+
+            </div> 
+            
+</div>
+        
+
+        </div>
+
+    </nav>
+    
+    <div class="container allBody">
         @RenderBody()
     </div>
 </body>

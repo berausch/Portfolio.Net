@@ -1,0 +1,55 @@
+﻿body {
+background-color: lightyellow;   
+}
+
+
+.navbar-inverse {
+    background-color: lightblue;
+    border-top: 4px solid navy;
+    border-bottom: 4px solid navy;
+}
+
+.head-custom {
+    background-color: #FFC966;
+    border-left: 4px solid navy;
+    border-right: 4px solid navy;
+    font-size: 22px;   
+}
+
+
+.allBody {
+    text-align: center;
+     padding-top: 200px;
+     font-size: 18px;
+     color: navy;
+     font-family: 'Gill Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+}
+.header-Name {
+        font-size: 40px;
+        color: navy;
+}
+.header-links{
+
+    font-size: 25px;
+}
+
+
+a:hover .header-links {
+        
+        color: white;
+}
+
+.header-text {
+    padding-top: 40px;
+    padding-left: 180px; 
+
+    font-family: 'Gill Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 160px;
+    float: left;
+}
